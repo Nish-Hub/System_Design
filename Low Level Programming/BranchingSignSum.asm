@@ -1,7 +1,11 @@
-// Program : Signum using branching 
-//if r0>0
-// set r1=1
-// else r1=0
+/* Program : Signum using branching 
+if r0>0
+set r1=1
+else r1=0
+
+Note : Here line numbers are instruction numbers which are used by assemblers and translators as implicit line numbers for 
+various purposes . The line numbers are nothing but program counters. 
+*/
 @R0
 D=M
 @POSITIVE  // Using the label declared below
@@ -17,5 +21,4 @@ M=1
 @END   // Infinite loop for termination to avoid NOP attack
 0;JMP
 
-//Note : Here line numbers are instruction numbers which are used by assemblers and translators as implicit line numbers for 
-// various purposes . The line numbers are nothing but program counters. 
+
