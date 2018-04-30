@@ -6,3 +6,6 @@ D=M
 D=M+D
 @2
 M=D
+//Adding infinite loop to avoid Null opcode attack
+@6
+0;JMP
