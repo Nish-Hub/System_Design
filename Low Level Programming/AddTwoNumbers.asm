@@ -1,10 +1,10 @@
 
 // Add values of registers at address 0 and 1 and save it in register in address 2
-@0
+@R0  // Added symbols for registers whose value we are going to access
 D=M
-@1
+@R1
 D=M+D
-@2
+@R2
 M=D
 //Adding infinite loop to avoid Null opcode attack
 @6
