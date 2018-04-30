@@ -4,13 +4,13 @@
 // else r1=0
 @R0
 D=M
-@POSITIVE  // Line number of code without any space
+@POSITIVE  // Using the label declared below
 D ;JGT  //if R0 >0 , then goto line 8 or value of A //register is used as a line number
 @R1
 M=0
 @END
 0;JMP  // Jump to end of program
-(POSITIVE)
+(POSITIVE)  // Label Declaration and below this line, we have the body of the label
 @R1
 M=1
 (END)
